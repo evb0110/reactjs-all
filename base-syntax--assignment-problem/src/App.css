@@ -1,0 +1,15 @@
+.App {
+  margin: 16px;
+  font-size: 20px;
+}
+
+.UserInput {
+  margin: 10px;
+  background: lightblue;
+  border: 1px solid blue;
+
+}
+
+li {
+  font-size: 17px;
+}
