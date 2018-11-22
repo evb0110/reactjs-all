@@ -37,4 +37,8 @@ var templateTwo = (
 );
 var appRoot = document.getElementById('app');
 
+<<<<<<< HEAD
 ReactDOM.render(template, appRoot); 
+=======
+ReactDOM.render(template, appRoot); 
+>>>>>>> ac00b224ea4b464077d5d5fd9e2d937fb7c826fb
