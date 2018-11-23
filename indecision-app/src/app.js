@@ -1,6 +1,6 @@
 console.log('App.js is running');
 
-let app = {
+const app = {
   title: "Indecision app",
   subtitle: "My first react app",
   options: [
@@ -9,7 +9,7 @@ let app = {
 };
 
 
-let template = ( 
+const template = ( 
   <div>
     <h1>{app.title}</h1>
     {app.subtitle && <p>{app.subtitle}</p>}
@@ -22,19 +22,19 @@ let template = (
 );
 
 
-let user = {
+const user = {
   name: 'Vladimir',
   age: 44,
   location: 'Moscow',
 };
 
-var templateTwo = (
+const templateTwo = (
     <div>
       <h1>my name is {user.name}</h1>
       <p>my age is {user.age}</p>
       <p>my location is {user.location}</p>
     </div>
 );
-var appRoot = document.getElementById('app');
+const appRoot = document.getElementById('app');
 
 ReactDOM.render(template, appRoot); 
