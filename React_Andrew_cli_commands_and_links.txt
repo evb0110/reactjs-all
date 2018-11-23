@@ -25,3 +25,12 @@
  1879  babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
  
  babel src/playground/es6-arrow-function-2.js --out-file=public/scripts/app.js --presets=env,react
+
+ 
+ 
+ google: react dom elements
+ https://reactjs.org/docs/dom-elements.html
+ 
+ google: react dom events
+ https://reactjs.org/docs/events.html
+ 
