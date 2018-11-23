@@ -23,3 +23,5 @@
  1876  babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
  1878  yarn install
  1879  babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+ 
+ babel src/playground/es6-arrow-function-2.js --out-file=public/scripts/app.js --presets=env,react
