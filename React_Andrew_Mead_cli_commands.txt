@@ -1,0 +1,25 @@
+ 1832  npm install webpack webpack-cli --save-dev
+ 1834  ./node_modules/.bin/webpack index.js --mode=development
+ 1840  cd ../
+ 1841  aptitude search yarn
+ 1842  nodejs -v
+ 1843  node -v
+ 1844  npm -v
+ 1846  sudo npm install -g yarn
+ 1847  yarn -v
+ 1850  live-server public/
+ 1851  yarn global add live-server
+ 1858  live-server -v
+ 1860  npm install -g live-server
+ 1861  sudo npm install -g live-server
+ 1865  live-server public/
+ 1866  npm install -g babel-cli@6.24.1
+ 1867  sudo npm install -g babel-cli@6.24.1
+ 1868  babel --help
+ 1870  yarn init
+ 1871  yarn add babel-preset-react@6.24.1 babel-preset-env@1.5.2
+ 1873  babel src/app.js --out-file=public/scripts/app.js --presets=env,react
+ 1875  babel src/app.js --out-file=public/scripts/app.js --presets=env,react
+ 1876  babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
+ 1878  yarn install
+ 1879  babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch
