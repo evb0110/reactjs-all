@@ -33,4 +33,19 @@
  
  google: react dom events
  https://reactjs.org/docs/events.html
+
+===========
+https://www.udemy.com/react-2nd-edition/learn/v4/questions/5645978
+Hi Eugene,
+
+The only commands you'll need until the Webpack section are:
+
+npm install -g babel-cli live-server
+npm install babel-preset-env babel-preset-react
+And the commands to run are:
+
+live-server public
+babel src/app.js --out-file=/public/scripts/app.js --preset=env,react
+ 
+
  

@@ -1,89 +1,37 @@
-"use strict";
+'use strict';
 
-console.log('App.js is running');
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var app = {
-  title: "Indecision app",
-  subtitle: "My first react app",
-  options: []
-};
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var onFormSubmit = function onFormSubmit(e) {
-  e.preventDefault();
+var Person = function () {
+  function Person() {
+    var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'Anonymous';
+    var age = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
 
-  var option = e.target.elements.option.value;
+    _classCallCheck(this, Person);
 
-  if (option) {
-    app.options.push(option);
-    e.target.elements.option.value = '';
+    this.name = name;
+    this.age = age;
   }
-  console.log(option);
-  renderAll();
-};
 
-var appRoot = document.getElementById('app');
+  _createClass(Person, [{
+    key: 'getGreeting',
+    value: function getGreeting() {
+      return 'Hi, I am ' + this.name + '!';
+    }
+  }, {
+    key: 'getDescription',
+    value: function getDescription() {
+      return this.name + ' is ' + this.age + ' year(s) old.';
+    }
+  }]);
 
-var renderAll = function renderAll() {
-  var template = React.createElement(
-    "div",
-    null,
-    React.createElement(
-      "h1",
-      null,
-      app.title
-    ),
-    app.subtitle && React.createElement(
-      "p",
-      null,
-      app.subtitle
-    ),
-    React.createElement(
-      "p",
-      null,
-      app.options.length > 0 ? "Options present" : "No options"
-    ),
-    React.createElement(
-      "p",
-      null,
-      app.options.length
-    ),
-    React.createElement(
-      "button",
-      { onClick: removeAll },
-      "Remove all"
-    ),
-    React.createElement(
-      "ol",
-      null,
-      React.createElement(
-        "li",
-        null,
-        "first item"
-      ),
-      React.createElement(
-        "li",
-        null,
-        "second item"
-      )
-    ),
-    React.createElement(
-      "form",
-      { onSubmit: onFormSubmit },
-      React.createElement("input", { type: "text", name: "option" }),
-      React.createElement(
-        "button",
-        null,
-        "Add Option"
-      )
-    )
-  );
+  return Person;
+}();
 
-  ReactDOM.render(template, appRoot);
-};
+var me = new Person('Andrew Mead', 26);
+console.log(me.getDescription());
 
-var removeAll = function removeAll() {
-  app.options = [];
-  renderAll();
-};
-
-renderAll();
+var other = new Person();
+console.log(other.getDescription());
