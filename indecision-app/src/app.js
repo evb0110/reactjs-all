@@ -21,6 +21,16 @@ const onFormSubmit = (e) => {
 };
 
 
+const removeAll = () => {
+  app.options = [];
+  renderAll();
+};
+
+const onMakeDecision = () => {
+  const randomNum = Math.floor(Math.random() * app.options.length);
+  const option = app.options[randomNum];
+  console.log(option);
+};
 
 const appRoot = document.getElementById('app');
 
@@ -31,11 +41,12 @@ const renderAll = () => {
       <h1>{app.title}</h1>
       {app.subtitle && <p>{app.subtitle}</p>}
       <p>{app.options.length > 0 ? "Options present" : "No options"}</p>
-      <p>{app.options.length}</p>
+
+      <button disabled={app.options.length === 0} onClick={onMakeDecision}>What should I do?</button>
       <button onClick={removeAll}>Remove all</button>
-      <ol>
-        <li>first item</li>
-        <li>second item</li>
+      <ol>{
+            app.options.map( (x, i) =>           <li key={i}>{x}</li>)
+          }
       </ol>
       <form onSubmit={onFormSubmit}>
         <input type="text" name="option" />
@@ -46,11 +57,6 @@ const renderAll = () => {
 
   ReactDOM.render(template, appRoot);
 
-};
-
-const removeAll = () => {
-  app.options = [];
-  renderAll();
 };
 
 renderAll();
