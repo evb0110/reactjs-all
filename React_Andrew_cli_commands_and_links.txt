@@ -1,3 +1,23 @@
+local installation
+$ yarn add live-server babel-cli@6.24.1
+ 
+add to package.json:
+"scripts": {
+    "serve": "live-server public/",
+    "build": "webpack",
+    "build-babel": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch"
+  },
+  
+$ yarn add webpack@3.1.0
+
+
+
+
+
+ 
+ 
+ 
+ 
  1832  npm install webpack webpack-cli --save-dev
  1834  ./node_modules/.bin/webpack index.js --mode=development
  1840  cd ../
