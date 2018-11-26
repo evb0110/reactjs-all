@@ -10,7 +10,16 @@ add to package.json:
   
 $ yarn add webpack@3.1.0
 
+2000  sudo npm uninstall -g babel-cli live-server
+2001  yarn run serve
+2002  yarn run build
+2003  yarn add validator@8.0.0
+2004  yarn run build
 
+yarn add react@16.0.0 react-dom@16.0.0
+
+yarn add babel-core@6.25.0
+ 
 
 
 
