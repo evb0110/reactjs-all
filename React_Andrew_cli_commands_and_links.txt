@@ -19,6 +19,12 @@ $ yarn add webpack@3.1.0
 yarn add react@16.0.0 react-dom@16.0.0
 
 yarn add babel-core@6.25.0
+
+source map:
+file: webpack.config.js 
+add lines
+,
+  devtool: 'cheap-module-eval-source-map',
  
 
 
