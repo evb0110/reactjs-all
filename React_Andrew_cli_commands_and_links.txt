@@ -25,8 +25,36 @@ file: webpack.config.js
 add lines
 ,
   devtool: 'cheap-module-eval-source-map',
+  
+  ----
+  
+ yarn add webpack-dev-server@2.5.1
  
+ ---
+ 
+ es6 classes new syntax:
+ google: babel js plugins transform class properties plugin
+ 
+ ---
+ 
+ google: react-modal
+ 
+ ---
+ 
+ https://www.npmjs.com/package/css-loader
+ 
+ https://www.npmjs.com/package/style-loader
+ 
+ ---
+ 
+ http://sass-lang.com/
+ 
+ yarn add sass-loader node-sass
 
+ ---
+ 
+ google: normalize css (to reset browsers particularities)
+yarn add normalize.css@7.0.0
 
 
  
