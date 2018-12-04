@@ -2,3 +2,6 @@ npm install redux
 
 npm install react-redux
 
+npm install redux-logger // middleware
+
+npm install redux-thunk // for asynchronous parts of the app
