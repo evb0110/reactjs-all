@@ -1,4 +1,5 @@
 import React from 'react';
+import './Char.css';
 
 const char = (props) => {
   const style = {
@@ -9,7 +10,7 @@ const char = (props) => {
     textAlign: 'center'
   }
   return (
-    <div style={style} onClick={props.clicked}>
+    <div className="Char" style={style} onClick={props.clicked}>
       {props.character}
     </div>
   )
