@@ -1,0 +1,51 @@
+textarea,
+input,
+button,
+.mybutton {
+  font-size: 1.75rem;
+}
+
+
+button,
+.buttonchange,
+.mybutton {
+  display: block;
+  margin: 0;
+   user-select: none;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+}
+
+.buttonchange,
+.mybutton {
+  width: 6rem;
+  height: 2rem;
+  padding: 4px 0;
+  margin: 3px 0;
+  text-align: center;
+}
+.mybutton {
+  border: 1px solid gray;
+  background: gray;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+}
+.buttonchange {
+  border: 1px solid blue;
+  resize: none;
+}
+
+.mybutton {
+}
+
+.would {
+  color: red;
+}
+.wouldnt {
+  color: blue;
+}
